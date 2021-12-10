@@ -17,3 +17,22 @@ for (let i = 1; i <= 100; i++) {
         console.log(i);
     }
 };
+
+//stesso programma, ma stavolta stampa in html
+
+const outputHtml = document.querySelector('.output');
+
+for (let i = 1; i <= 100; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+        outputHtml.innerHTML += 'FizzBuzz';
+    }
+    else if (i % 3 === 0) {
+        outputHtml.innerHTML += 'Fizz';
+    }
+    else if (i % 5 === 0) {
+        outputHtml.innerHTML += 'Buzz';
+    }
+    else {
+        outputHtml.innerHTML += `${i}`;
+    }
+};
