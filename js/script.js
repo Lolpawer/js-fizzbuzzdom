@@ -24,15 +24,15 @@ const outputHtml = document.querySelector('.output');
 
 for (let i = 1; i <= 100; i++) {
     if (i % 3 === 0 && i % 5 === 0) {
-        outputHtml.innerHTML += 'FizzBuzz';
+        outputHtml.innerHTML += `<div class="box box-3and5">FizzBuzz</div>`;
     }
     else if (i % 3 === 0) {
-        outputHtml.innerHTML += 'Fizz';
+        outputHtml.innerHTML += `<div class="box box-3">Fizz</div>`;
     }
     else if (i % 5 === 0) {
-        outputHtml.innerHTML += 'Buzz';
+        outputHtml.innerHTML += `<div class="box box-5">Buzz</div>`;
     }
     else {
-        outputHtml.innerHTML += `${i}`;
+        outputHtml.innerHTML += `<div class="box box-number">${i}</div>`;
     }
 };

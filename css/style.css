@@ -3,3 +3,55 @@
     margin: 0 auto;
     box-sizing: border-box;
 }
+
+.bg-color {
+    background-color: #083b4c;
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.title-huge {
+    color: #fff;
+    font-size: 80px;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.row {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.output {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: calc(100% / 7 - 50px);
+    height: 150px;
+    text-align: center;
+    line-height: 150px;
+    margin: 25px;
+    font-size: 25px;
+}
+
+.box-number {
+    background-color: #1389b2;
+}
+
+.box-3 {
+    background-color: #0bd6a1;
+}
+
+.box-5 {
+    background-color: #ffd166;
+}
+
+.box-3and5 {
+    background-color: #f0466f;
+}
